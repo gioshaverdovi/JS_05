@@ -4,6 +4,16 @@ var share = document.getElementById('shared');
 
 
 typing.focus();
+let output = `<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+  <button class="dropdown-item" type="button">Action</button>
+  <button class="dropdown-item" type="button">Another action</button>
+  <button class="dropdown-item" type="button">Something else here</button>
+</div>
+</div>`;
 
 function addRemove() {
     var element = document.createElement('div');
@@ -30,7 +40,7 @@ typing.addEventListener('keyup', function(event){
     }
     else if (event.which == 13 && typing.value == ''){
         window.alert('შეიყვანეთ ტექსტი');
-    }
+    }        
 });
 
 share.addEventListener('click', function(){
