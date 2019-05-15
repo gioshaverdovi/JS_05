@@ -6,8 +6,14 @@
     padding: 10px;
     border-radius: 10px;
     max-width: 100%;
-    margin-top: 10px;
+    
 }
 .shared .close {
     cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.container:hover .hide {
+    display: inline-block;
 }
